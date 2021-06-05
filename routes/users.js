@@ -22,7 +22,10 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+    console.log('POST ROUTE REACHED');
+    console.log(req.body);
     
+    res.send('POST ROUTE REACHED');
 });
 
 export default router;
